@@ -1,0 +1,11 @@
+site_name: Arbolith Affiliate API
+dev_addr: 127.0.0.1:8001
+theme: readthedocs
+pages:
+    - Home: index.md
+    - General Request Information: requests.md
+    - Campaigns: campaigns.md
+    - Smart Links: smartlinks.md
+    - Available Offers (Marketplace): availableoffers.md
+    - Campaign Request: campaignrequest.md
+    - Related Entities: relatedentities.md
