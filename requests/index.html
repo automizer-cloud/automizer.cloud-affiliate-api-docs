@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>General Request Information - Arbolith Affiliate API</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "General Request Information";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Arbolith Affiliate API</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">General Request Information</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#uri-method">URI / Method</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#headers">Headers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#http-errors">HTTP Errors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#rate-limit">Rate limit</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../campaigns/">Campaigns</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../smartlinks/">Smart Links</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../availableoffers/">Available Offers (Marketplace)</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../campaignrequest/">Campaign Request</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../relatedentities/">Related Entities</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Arbolith Affiliate API</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>General Request Information</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="uri-method">URI / Method</h3>
+<p>All requests should be made to the URI and method specified on each section. </p>
+<h3 id="headers">Headers</h3>
+<p>You should always include the following headers on your request:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/json, charset=UTF-8</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>application/json, text/plain, */*</td>
+</tr>
+<tr>
+<td>Cache</td>
+<td>no-cache</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Bearer TOKEN</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>TOKEN</code> details will be provided by an AppMarket Media representative. </p>
+<h3 id="http-errors">HTTP Errors</h3>
+<p>The API can generate the following HTTP errors:</p>
+<table>
+<thead>
+<tr>
+<th>Error</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>Unauthenticated. You failed to provide the <code>Authorization</code> header or the <code>TOKEN</code> is invalid.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden. You are not authorized to access the specified resource.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not found. The specified resource could not be found.</td>
+</tr>
+<tr>
+<td>501</td>
+<td>Role not enabled for the specified action.</td>
+</tr>
+</tbody>
+</table>
+<p>The response body will also include the following JSON with the error description:</p>
+<pre><code>{
+    &quot;error&quot;: {
+        &quot;code&quot;: 401,
+        &quot;message&quot;: &quot;Unauthenticated&quot;
+    }
+}
+</code></pre>
+
+<h3 id="rate-limit">Rate limit</h3>
+<p>The API is limited to 15 requests per minute per user.</p>
+<p>If the limit is exceeded, you'll receive a <code>429 HTTP error</code> with the following body: <code>Too Many Attempts.</code></p>
+<p>You can check the response headers to determine how many requests you have left:</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Present</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x-ratelimit-limit</td>
+<td>Always</td>
+<td>The number of requests allowed per minute.</td>
+</tr>
+<tr>
+<td>x-ratelimit-remaining</td>
+<td>Always</td>
+<td>The number of requests remaining for the current minute.</td>
+</tr>
+<tr>
+<td>x-ratelimit-reset</td>
+<td>Limit reached</td>
+<td>The time at which the current rate limit window resets in UTC epoch seconds.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../campaigns/" class="btn btn-neutral float-right" title="Campaigns"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../campaigns/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
