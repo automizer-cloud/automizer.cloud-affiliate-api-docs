@@ -7,6 +7,7 @@ For more information visit [arbolith.com](http://www.arbolith.com).
 * [General Request information](requests.md)
 * [Campaigns](campaigns.md)
 * [Smart Links](smartlinks.md)
+* [Products](products.md)
 * [Available Offers (Marketplace)](availableoffers.md)
 * [Campaign Request](campaignrequest.md)
 * [Related Entities](relatedentities.md)
