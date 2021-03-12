@@ -35,6 +35,14 @@
 
     
     <url>
+     <loc>None/products/</loc>
+     <lastmod>2021-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>None/availableoffers/</loc>
      <lastmod>2021-03-12</lastmod>
      <changefreq>daily</changefreq>

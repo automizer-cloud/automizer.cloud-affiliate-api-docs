@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Campaigns - Arbolith Affiliate API</title>
+  <title>Products - Arbolith Affiliate API</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Campaigns";
+    var mkdocs_page_name = "Products";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -64,8 +64,22 @@
 <li>
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../campaigns/">Campaigns</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../smartlinks/">Smart Links</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Campaigns</a>
+        <a class="current" href="./">Products</a>
         
             <ul>
             
@@ -84,20 +98,6 @@
                 
             
             </ul>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../smartlinks/">Smart Links</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../products/">Products</a>
         
     </li>
 <li>
@@ -145,7 +145,7 @@
     
       
     
-    <li>Campaigns</li>
+    <li>Products</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -156,11 +156,11 @@
             <div class="section">
               
                 <h3 id="usage">Usage</h3>
-<p>Poll this endpoint to obtain campaign information.</p>
+<p>Poll this endpoint to obtain product information.</p>
 <h3 id="uri-method">URI / Method</h3>
 <ul>
-<li>Endpoint (all campaigns): <code>https://arbolith.com/api/campaigns</code> (Method: <code>GET</code>)</li>
-<li>Endpoint (single campaign): <code>https://arbolith.com/api/campaigns/ID</code> (Method: <code>GET</code>)</li>
+<li>Endpoint (all products): <code>https://arbolith.com/api/products</code> (Method: <code>GET</code>)</li>
+<li>Endpoint (single product): <code>https://arbolith.com/api/products/ID</code> (Method: <code>GET</code>)</li>
 </ul>
 <h3 id="response-fields">Response fields</h3>
 <table>
@@ -177,43 +177,25 @@
 <td>id</td>
 <td>integer</td>
 <td>No</td>
-<td>Unique ID of the campaign.</td>
+<td>Unique ID of the product.</td>
 </tr>
 <tr>
-<td>affiliate_id</td>
-<td>integer</td>
-<td>No</td>
-<td>Your affiliate ID.</td>
-</tr>
-<tr>
-<td>affiliate_name</td>
+<td>name</td>
 <td>string</td>
 <td>No</td>
-<td>Your affiliate name.</td>
+<td>The name of the product.</td>
 </tr>
 <tr>
-<td>offer_id</td>
-<td>integer</td>
-<td>No</td>
-<td>The ID of the offer your campaign is based on.</td>
-</tr>
-<tr>
-<td>offer_name</td>
+<td>os</td>
 <td>string</td>
 <td>No</td>
-<td>The name of the offer that your campaign is based on.</td>
+<td>The operating system for targeting. Possible values: Android, iOS.</td>
 </tr>
 <tr>
-<td>description</td>
-<td>text</td>
-<td>Yes</td>
-<td>Description text.</td>
-</tr>
-<tr>
-<td>preview_url</td>
+<td>app_id</td>
 <td>string</td>
-<td>Yes</td>
-<td>Preview url (playstore, appstore or image hosting)</td>
+<td>No</td>
+<td>The App ID (Google Play / App Store).</td>
 </tr>
 <tr>
 <td>tracking_link</td>
@@ -222,40 +204,28 @@
 <td>Tracking link with required parameters. Check panel for optional parameters.</td>
 </tr>
 <tr>
-<td>terms_and_conditions</td>
-<td>boolean</td>
-<td>No</td>
-<td>If the campaign has terms and conditions.</td>
-</tr>
-<tr>
-<td>additional_terms_and_conditions</td>
-<td>text</td>
-<td>Yes</td>
-<td>The terms and conditions text.</td>
-</tr>
-<tr>
 <td>status</td>
 <td>string</td>
 <td>No</td>
-<td>Campaign status. Possible values: Active, Inactive.</td>
+<td>Product status. Possible values: Active, Inactive.</td>
+</tr>
+<tr>
+<td>traffic_rating</td>
+<td>string</td>
+<td>No</td>
+<td>Traffic rating. Check the Related Entities section for a list of possible values.</td>
+</tr>
+<tr>
+<td>incent</td>
+<td>boolean</td>
+<td>No</td>
+<td>If the product allows incent traffic.</td>
 </tr>
 <tr>
 <td>expiration_date</td>
 <td>date</td>
 <td>Yes</td>
 <td>Expiration date in YYYY-MM-DD format.</td>
-</tr>
-<tr>
-<td>traffic_rating</td>
-<td>string</td>
-<td>Yes</td>
-<td>Traffic rating. Check the Related Entities section for a list of possible values.</td>
-</tr>
-<tr>
-<td>incent</td>
-<td>boolean</td>
-<td>Yes</td>
-<td>If the campaign allows incent traffic.</td>
 </tr>
 <tr>
 <td>daily_conversions_cap</td>
@@ -272,20 +242,14 @@
 <tr>
 <td>payout_type</td>
 <td>string</td>
-<td>No</td>
-<td>The payout type. Check the Related Entities section for a list of possible values.</td>
+<td>Yes</td>
+<td>The payout type. If null, the payout types of the offers involved are being used.</td>
 </tr>
 <tr>
 <td>payout_value</td>
 <td>float</td>
 <td>Yes</td>
-<td>The payout value. If null, value is N/A.</td>
-</tr>
-<tr>
-<td>dynamic_payout</td>
-<td>boolean</td>
-<td>No</td>
-<td>If dynamic payout is false the campaign is deactivated whenever the offer payout is reduced.</td>
+<td>The payout value. If null, value is N/A or the payout values of the offers involved are being used.</td>
 </tr>
 <tr>
 <td>countries</td>
@@ -300,12 +264,6 @@
 <td>List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
 </tr>
 <tr>
-<td>operating_systems</td>
-<td>array</td>
-<td>No</td>
-<td>List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
-</tr>
-<tr>
 <td>connection_types</td>
 <td>array</td>
 <td>No</td>
@@ -316,24 +274,6 @@
 <td>array</td>
 <td>No</td>
 <td>List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
-</tr>
-<tr>
-<td>preview</td>
-<td>string</td>
-<td>Yes</td>
-<td>The fullsize preview image URL. Hotlinking not allowed.</td>
-</tr>
-<tr>
-<td>preview_thumb</td>
-<td>string</td>
-<td>Yes</td>
-<td>The thumbnail preview image URL. Hotlinking not allowed.</td>
-</tr>
-<tr>
-<td>creatives</td>
-<td>array</td>
-<td>No</td>
-<td>List of available creative files. The file sizes are expressed in KB. Extensions enabled: jpg, jpeg, jpe, gif, png, swf, zip, rar, mp4. Hotlinking not allowed.</td>
 </tr>
 </tbody>
 </table>
@@ -346,77 +286,45 @@
 <pre><code>{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: 1,
-            &quot;affiliate_id&quot;: 16,
-            &quot;affiliate_name&quot;: &quot;Hoeger Inc&quot;,
-            &quot;offer_id&quot;: 25,
-            &quot;offer_name&quot;: &quot;Sample Offer 1&quot;,
-            &quot;description&quot;: &quot;Sample description&quot;,
-            &quot;preview_url&quot;: &quot;https://play.google.com/store/apps/details?id=com.makemytrip&quot;,
-            &quot;tracking_link&quot;: &quot;http://ads.cleverlink.xyz/click/?campaign_id=1&quot;,
-            &quot;terms_and_conditions&quot;: true,
-            &quot;additional_terms_and_conditions&quot;: &quot;Sample additional terms and conditions.&quot;,
+            &quot;id&quot;: 49,
+            &quot;name&quot;: &quot;Product Name - Mainstream / Non-Incent&quot;,
+            &quot;os&quot;: &quot;Android&quot;,
+            &quot;app_id&quot;: &quot;UXqZv1tcwKJZhCZu9nc6QA3ifU622kOVoHRZbbIvV3puXmfbiF&quot;,
+            &quot;tracking_link&quot;: &quot;http://adult.cleverlink.xyz/click/p/?id=49&amp;affiliate_id=21&quot;,
             &quot;status&quot;: &quot;Inactive&quot;,
-            &quot;expiration_date&quot;: &quot;2018-02-16&quot;,
-            &quot;traffic_rating&quot;: &quot;Adult&quot;,
-            &quot;incent&quot;: true,
-            &quot;daily_conversions_cap&quot;: 556,
-            &quot;monthly_conversions_cap&quot;: 13913,
-            &quot;payout_type&quot;: &quot;CPA&quot;,
-            &quot;payout_value&quot;: 0.33,
-            &quot;dynamic_payout&quot;: true,
+            &quot;traffic_rating&quot;: &quot;Mainstream&quot;,
+            &quot;incent&quot;: false,
+            &quot;expiration_date&quot;: &quot;2021-03-19&quot;,
+            &quot;daily_conversions_cap&quot;: 652,
+            &quot;monthly_conversions_cap&quot;: 15752,
+            &quot;payout_type&quot;: &quot;RVS&quot;,
+            &quot;payout_value&quot;: null,
             &quot;countries&quot;: {
-                &quot;include&quot;: [
-                    &quot;EE&quot;,
-                    &quot;KG&quot;
+                &quot;exclude&quot;: [
+                    &quot;BG&quot;,
+                    &quot;UM&quot;
                 ]
             },
             &quot;devices&quot;: {
                 &quot;include&quot;: [
-                    &quot;Mobile&quot;
-                ]
-            },
-            &quot;operating_systems&quot;: {
-                &quot;exclude&quot;: [
-                    &quot;Android&quot;,
-                    &quot;Other/Unknown&quot;,
-                    &quot;Windows&quot;
+                    &quot;Mobile&quot;,
+                    &quot;Tablet&quot;
                 ]
             },
             &quot;connection_types&quot;: {
-                &quot;include&quot;: [
-                    &quot;Corporate&quot;,
-                    &quot;Dial-up&quot;,
+                &quot;exclude&quot;: [
+                    &quot;3G / 4G&quot;,
                     &quot;Other/Unknown&quot;
                 ]
             },
             &quot;carriers&quot;: {
                 &quot;exclude&quot;: [
-                    &quot;MTA (US)&quot;,
-                    &quot;Pelephone (IL)&quot;
+                    &quot;Inmarsat (GB)&quot;
                 ]
-            },
-            &quot;preview&quot;: &quot;https://arbolith.com/previews/25.jpg&quot;,
-            &quot;preview_thumb&quot;: &quot;https://arbolith.com/previews/25_t.jpg&quot;,
-            &quot;creatives&quot;: [
-                {
-                    &quot;url&quot;: &quot;https://arbolith.com/creativities/25/banner.png&quot;,
-                    &quot;size&quot;: 142,
-                    &quot;mime_type&quot;: &quot;image/png&quot;,
-                    &quot;width&quot;: 678,
-                    &quot;height&quot;: 565
-                },
-                {
-                    &quot;url&quot;: &quot;https://arbolith.com/creativities/21/Files.zip&quot;,
-                    &quot;size&quot;: 8,
-                    &quot;mime_type&quot;: &quot;application/zip&quot;,
-                    &quot;width&quot;: 0,
-                    &quot;height&quot;: 0
-                }
-            ],
+            }
         },
         {
-            // Another campaign...
+            // Another product
         }
     ]
 }
@@ -428,10 +336,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../smartlinks/" class="btn btn-neutral float-right" title="Smart Links"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../availableoffers/" class="btn btn-neutral float-right" title="Available Offers (Marketplace)"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../requests/" class="btn btn-neutral" title="General Request Information"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../smartlinks/" class="btn btn-neutral" title="Smart Links"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -457,10 +365,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../requests/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../smartlinks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../smartlinks/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../availableoffers/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
