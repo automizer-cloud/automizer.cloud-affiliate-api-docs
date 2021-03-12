@@ -57,7 +57,7 @@ creatives                       | array     | No       | List of available creat
             "offer_name": "Sample Offer 1",
             "description": "Sample description",
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
-            "tracking_link": "http://ads.bravads.com/click/?campaign_id=1",
+            "tracking_link": "http://ads.cleverlink.xyz/click/?campaign_id=1",
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample additional terms and conditions.",
             "status": "Inactive",
@@ -100,18 +100,18 @@ creatives                       | array     | No       | List of available creat
                     "Pelephone (IL)"
                 ]
             },
-            "preview": "https://arbolith.com/x/previews/25.jpg",
-            "preview_thumb": "https://arbolith.com/x/previews/25_t.jpg",
+            "preview": "https://arbolith.com/previews/25.jpg",
+            "preview_thumb": "https://arbolith.com/previews/25_t.jpg",
             "creatives": [
                 {
-                    "url": "https://arbolith.com/x/creativities/25/banner.png",
+                    "url": "https://arbolith.com/creativities/25/banner.png",
                     "size": 142,
                     "mime_type": "image/png",
                     "width": 678,
                     "height": 565
                 },
                 {
-                    "url": "https://arbolith.com/x/creativities/21/Files.zip",
+                    "url": "https://arbolith.com/creativities/21/Files.zip",
                     "size": 8,
                     "mime_type": "application/zip",
                     "width": 0,

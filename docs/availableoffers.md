@@ -72,8 +72,8 @@ status                          | string    | No       | The offer status. Posib
                     "Orange (FR)"
                 ]
             },
-            "preview": "https://arbolith.com/x/previews/20.gif",
-            "preview_thumb": "https://arbolith.com/x/previews/20.gif",
+            "preview": "https://arbolith.com/previews/20.gif",
+            "preview_thumb": "https://arbolith.com/previews/20.gif",
             "status": "Available"
         },
         // Another offer...

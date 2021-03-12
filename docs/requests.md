@@ -13,7 +13,7 @@ Accept        | application/json, text/plain, \*/\*
 Cache         | no-cache
 Authorization | Bearer TOKEN
 
-The `TOKEN` details will be provided by a BravAds representative. 
+The `TOKEN` details will be provided by an AppMarket Media representative. 
 
 ### HTTP Errors
 

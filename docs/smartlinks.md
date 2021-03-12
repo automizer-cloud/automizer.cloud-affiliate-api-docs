@@ -45,7 +45,7 @@ carriers                 | array     | No       | List of carriers for targeting
             "affiliate_id": 16,
             "affiliate_name": "Cummings-O'Connell",
             "name": "Sample SmartLink 1",
-            "tracking_link": "http://ads.bravads.com/click/s/?id=2",
+            "tracking_link": "http://ads.cleverlink.xyz/click/s/?id=2",
             "status": "Inactive",
             "traffic_rating": "Mainstream",
             "incent": true,
