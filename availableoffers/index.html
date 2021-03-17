@@ -207,12 +207,6 @@
 <td>If the offer allows incent traffic.</td>
 </tr>
 <tr>
-<td>payable_goal</td>
-<td>string</td>
-<td>Yes</td>
-<td>The payable goal.</td>
-</tr>
-<tr>
 <td>payout_type</td>
 <td>string</td>
 <td>No</td>
@@ -223,6 +217,12 @@
 <td>float</td>
 <td>No</td>
 <td>The payout value. If null, value is N/A.</td>
+</tr>
+<tr>
+<td>payout_goal</td>
+<td>string</td>
+<td>Yes</td>
+<td>The payout goal.</td>
 </tr>
 <tr>
 <td>terms_and_conditions</td>
@@ -296,9 +296,9 @@
             &quot;preview_url&quot;: &quot;https://play.google.com/store/apps/details?id=com.makemytrip&quot;,
             &quot;traffic_rating&quot;: &quot;Mainstream&quot;,
             &quot;incent&quot;: true,
-            &quot;payable_goal&quot;: null,
             &quot;payout_type&quot;: &quot;CPC&quot;,
             &quot;payout_value&quot;: 0.001,
+            &quot;payout_goal&quot;: null,
             &quot;terms_and_conditions&quot;: true,
             &quot;additional_terms_and_conditions&quot;: &quot;Sample terms and conditions text.&quot;,
             &quot;countries&quot;: {
