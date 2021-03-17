@@ -27,6 +27,7 @@ traffic_rating                  | string    | Yes      | Traffic rating. Check t
 incent                          | boolean   | Yes      | If the campaign allows incent traffic.
 daily_conversions_cap           | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap         | integer   | Yes      | The monthly conversions cap.
+payable_goal                    | string    | Yes      | The payable goal. 
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | Yes      | The payout value. If null, value is N/A.
 dynamic_payout                  | boolean   | No       | If dynamic payout is false the campaign is deactivated whenever the offer payout is reduced.
@@ -66,6 +67,7 @@ creatives                       | array     | No       | List of available creat
             "incent": true,
             "daily_conversions_cap": 556,
             "monthly_conversions_cap": 13913,
+            "payable_goal": "install",
             "payout_type": "CPA",
             "payout_value": 0.33,
             "dynamic_payout": true,
