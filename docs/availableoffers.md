@@ -16,9 +16,9 @@ description                     | text      | Yes      | Description text.
 preview_url                     | string    | Yes      | Preview url (playstore, appstore or image hosting)
 traffic_rating                  | string    | Yes      | Traffic rating. Check the Related Entities section for a list of possible values.
 incent                          | boolean   | Yes      | If the offer allows incent traffic.
-payable_goal                    | string    | Yes      | The payable goal.
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | No       | The payout value. If null, value is N/A.
+payout_goal                     | string    | Yes      | The payout goal.
 terms_and_conditions            | boolean   | No       | If the offer has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 countries                       | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
@@ -42,9 +42,9 @@ status                          | string    | No       | The offer status. Posib
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "traffic_rating": "Mainstream",
             "incent": true,
-            "payable_goal": null,
             "payout_type": "CPC",
             "payout_value": 0.001,
+            "payout_goal": null,
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample terms and conditions text.",
             "countries": {
