@@ -36,6 +36,8 @@ devices                         | array     | No       | List of devices for tar
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+sub_2_allow                     | array     | Yes      | List of allowed subids.
+sub_2_deny                      | array     | Yes      | List of denied subids.
 preview                         | string    | Yes      | The fullsize preview image URL. Hotlinking not allowed.
 preview_thumb                   | string    | Yes      | The thumbnail preview image URL. Hotlinking not allowed.
 creatives                       | array     | No       | List of available creative files. The file sizes are expressed in KB. Extensions enabled: jpg, jpeg, jpe, gif, png, swf, zip, rar, mp4. Hotlinking not allowed.
@@ -102,6 +104,14 @@ creatives                       | array     | No       | List of available creat
                     "Pelephone (IL)"
                 ]
             },
+            "sub_2_allow": null,
+            "sub_2_deny": [
+                "7_IXMxi",
+                "4_wZ6iY",
+                "3_OVgnv",
+                "7_5INrD",
+                "6_xEvIo"
+            ],
             "preview": "https://arbolith.com/previews/25.jpg",
             "preview_thumb": "https://arbolith.com/previews/25_t.jpg",
             "creatives": [
