@@ -36,8 +36,9 @@ devices                         | array     | No       | List of devices for tar
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
-sub_2_allow                     | array     | Yes      | List of allowed subids.
-sub_2_deny                      | array     | Yes      | List of denied subids.
+blacklist_subs                  | boolean   | No       | Specifies if the blacklist should be used. If false, user should refer to the whitelist. 
+sub_2_allow                     | array     | Yes      | List of allowed subids (whitelist).
+sub_2_deny                      | array     | Yes      | List of denied subids (blacklist).
 preview                         | string    | Yes      | The fullsize preview image URL. Hotlinking not allowed.
 preview_thumb                   | string    | Yes      | The thumbnail preview image URL. Hotlinking not allowed.
 creatives                       | array     | No       | List of available creative files. The file sizes are expressed in KB. Extensions enabled: jpg, jpeg, jpe, gif, png, swf, zip, rar, mp4. Hotlinking not allowed.
@@ -104,6 +105,7 @@ creatives                       | array     | No       | List of available creat
                     "Pelephone (IL)"
                 ]
             },
+            "blacklist_subs": true,
             "sub_2_allow": null,
             "sub_2_deny": [
                 "7_IXMxi",
