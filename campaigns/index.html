@@ -324,16 +324,22 @@
 <td>List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.</td>
 </tr>
 <tr>
+<td>blacklist_subs</td>
+<td>boolean</td>
+<td>No</td>
+<td>Specifies if the blacklist should be used. If false, user should refer to the whitelist.</td>
+</tr>
+<tr>
 <td>sub_2_allow</td>
 <td>array</td>
 <td>Yes</td>
-<td>List of allowed subids.</td>
+<td>List of allowed subids (whitelist).</td>
 </tr>
 <tr>
 <td>sub_2_deny</td>
 <td>array</td>
 <td>Yes</td>
-<td>List of denied subids.</td>
+<td>List of denied subids (blacklist).</td>
 </tr>
 <tr>
 <td>preview</td>
@@ -415,6 +421,7 @@
                     &quot;Pelephone (IL)&quot;
                 ]
             },
+            &quot;blacklist_subs&quot;: true,
             &quot;sub_2_allow&quot;: null,
             &quot;sub_2_deny&quot;: [
                 &quot;7_IXMxi&quot;,
