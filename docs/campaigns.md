@@ -105,13 +105,9 @@ creatives                       | array     | No       | List of available creat
                 ]
             },
             "blacklist_subs": true,
-            "sub_2_allow": null,
-            "sub_2_deny": [
-                "7_IXMxi",
-                "4_wZ6iY",
-                "3_OVgnv",
-                "7_5INrD",
-                "6_xEvIo"
+            "sub_ids": [
+                "2_157",
+                "4_157"
             ],
             "preview": "https://arbolith.com/previews/25.jpg",
             "preview_thumb": "https://arbolith.com/previews/25_t.jpg",
