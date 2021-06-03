@@ -5,7 +5,6 @@ Poll this endpoint to obtain campaign information.
 ### URI / Method
 
 * Endpoint (all campaigns): `https://arbolith.com/api/campaigns` (Method: `GET`)
-* Endpoint (single campaign): `https://arbolith.com/api/campaigns/ID` (Method: `GET`)
 
 ### Response fields
 

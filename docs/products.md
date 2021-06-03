@@ -5,7 +5,6 @@ Poll this endpoint to obtain product information.
 ### URI / Method
 
 * Endpoint (all products): `https://arbolith.com/api/products` (Method: `GET`)
-* Endpoint (single product): `https://arbolith.com/api/products/ID` (Method: `GET`)
 
 ### Response fields
 
