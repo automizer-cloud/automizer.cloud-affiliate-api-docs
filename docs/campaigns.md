@@ -11,6 +11,7 @@ Poll this endpoint to obtain campaign information.
 Field                           | Data Type | Nullable | Notes
 ------------------------------- | --------- | -------- | --------------------------------------------------------------
 id                              | integer   | No       | Unique ID of the campaign.
+name                            | string    | No       | The name of the campaign.
 affiliate_id                    | integer   | No       | Your affiliate ID.
 affiliate_name                  | string    | No       | Your affiliate name.
 offer_id                        | integer   | No       | The ID of the offer your campaign is based on.
@@ -53,6 +54,7 @@ creatives                       | array     | No       | List of available creat
     "data": [
         {
             "id": 1,
+            "name": "Sample Campaign 1",
             "affiliate_id": 16,
             "affiliate_name": "Hoeger Inc",
             "offer_id": 25,
