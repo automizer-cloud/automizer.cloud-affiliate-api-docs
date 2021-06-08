@@ -14,7 +14,6 @@ id                              | integer   | No       | The offer ID.
 name                            | string    | No       | The offer name.
 description                     | text      | Yes      | Description text.
 preview_url                     | string    | Yes      | Preview url (playstore, appstore or image hosting)
-traffic_rating                  | string    | Yes      | Traffic rating. Check the Related Entities section for a list of possible values.
 incent                          | boolean   | Yes      | If the offer allows incent traffic.
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | No       | The payout value. If null, value is N/A.
@@ -40,7 +39,6 @@ status                          | string    | No       | The offer status. Posib
             "name": "Sample Offer 20",
             "description": "Sample description.",
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
-            "traffic_rating": "Mainstream",
             "incent": true,
             "payout_type": "CPC",
             "payout_value": 0.001,

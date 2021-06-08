@@ -1,10 +1,3 @@
-### Traffic Rating
-
-ID  | Name       | Description
---- | ---------- | -----------
-1   | Mainstream |
-2   | Adult      |
-
 ### Payout Type
 
 ID  | Name  | Description

@@ -23,7 +23,6 @@ terms_and_conditions            | boolean   | No       | If the campaign has ter
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 status                          | string    | No       | Campaign status. Possible values: Active, Inactive. 
 expiration_date                 | date      | Yes      | Expiration date in YYYY-MM-DD format.
-traffic_rating                  | string    | Yes      | Traffic rating. Check the Related Entities section for a list of possible values.
 incent                          | boolean   | Yes      | If the campaign allows incent traffic.
 daily_conversions_cap           | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap         | integer   | Yes      | The monthly conversions cap.
@@ -66,7 +65,6 @@ creatives                       | array     | No       | List of available creat
             "additional_terms_and_conditions": "Sample additional terms and conditions.",
             "status": "Inactive",
             "expiration_date": "2018-02-16",
-            "traffic_rating": "Adult",
             "incent": true,
             "daily_conversions_cap": 556,
             "monthly_conversions_cap": 13913,

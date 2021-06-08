@@ -16,7 +16,6 @@ os                       | string    | No       | The operating system for targe
 app_id                   | string    | No       | The App ID (Google Play / App Store).
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
 status                   | string    | No       | Product status. Possible values: Active, Inactive. 
-traffic_rating           | string    | No       | Traffic rating. Check the Related Entities section for a list of possible values.
 incent                   | boolean   | No       | If the product allows incent traffic.
 expiration_date          | date      | Yes      | Expiration date in YYYY-MM-DD format.
 daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
@@ -45,7 +44,6 @@ carriers                 | array     | No       | List of carriers for targeting
             "app_id": "UXqZv1tcwKJZhCZu9nc6QA3ifU622kOVoHRZbbIvV3puXmfbiF",
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",
             "status": "Inactive",
-            "traffic_rating": "Mainstream",
             "incent": false,
             "expiration_date": "2021-03-19",
             "daily_conversions_cap": 652,
