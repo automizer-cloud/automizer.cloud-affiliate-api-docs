@@ -13,7 +13,7 @@ Field                    | Data Type | Nullable | Notes
 id                       | integer   | No       | Unique ID of the product.
 name                     | string    | No       | The name of the product.
 os                       | string    | No       | The operating system for targeting. Possible values: Android, iOS.
-app_id                   | string    | No       | The App ID (Google Play / App Store).
+app_id                   | string    | Yes      | The App ID (Google Play / App Store).
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
 status                   | string    | No       | Product status. Possible values: Active, Inactive. 
 expiration_date          | date      | Yes      | Expiration date in YYYY-MM-DD format.
@@ -40,7 +40,7 @@ carriers                 | array     | No       | List of carriers for targeting
             "id": 49,
             "name": "Sample Product 1",
             "os": "Android",
-            "app_id": "UXqZv1tcwKJZhCZu9nc6QA3ifU622kOVoHRZbbIvV3puXmfbiF",
+            "app_id": "com.example.android",
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",
             "status": "Inactive",
             "expiration_date": "2021-03-19",
