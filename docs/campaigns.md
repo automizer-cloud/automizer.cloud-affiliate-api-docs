@@ -17,8 +17,9 @@ affiliate_name                  | string    | No       | Your affiliate name.
 offer_id                        | integer   | No       | The ID of the offer your campaign is based on.
 offer_name                      | string    | No       | The name of the offer that your campaign is based on.
 description                     | text      | Yes      | Description text.
-preview_url                     | string    | Yes      | Preview url (playstore, appstore or image hosting)
+preview_url                     | string    | Yes      | Preview url (playstore, appstore or image hosting).
 tracking_link                   | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
+impression_url                  | string    | Yes      | Impression url.
 terms_and_conditions            | boolean   | No       | If the campaign has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 status                          | string    | No       | Campaign status. Possible values: Active, Inactive. 
@@ -60,6 +61,7 @@ creatives                       | array     | No       | List of available creat
             "description": "Sample description",
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "tracking_link": "http://ads.cleverlink.xyz/click/?campaign_id=1",
+            "impression_url": null,
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample additional terms and conditions.",
             "status": "Inactive",
