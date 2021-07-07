@@ -21,6 +21,7 @@ daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap  | integer   | Yes      | The monthly conversions cap.
 payout_type              | string    | Yes      | The payout type. If null, the payout types of the offers involved are being used.
 payout_value             | float     | Yes      | The payout value. If null, value is N/A or the payout values of the offers involved are being used.
+payout_goal              | string    | Yes      | The payout goal.
 countries                | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
 devices                  | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 connection_types         | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
@@ -48,6 +49,7 @@ carriers                 | array     | No       | List of carriers for targeting
             "monthly_conversions_cap": 15752,
             "payout_type": "RVS",
             "payout_value": null,
+            "payout_goal": null,
             "countries": {
                 "exclude": [
                     "BG",
