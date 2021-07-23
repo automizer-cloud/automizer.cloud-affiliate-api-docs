@@ -13,7 +13,7 @@ Accept        | application/json, text/plain, \*/\*
 Cache         | no-cache
 Authorization | Bearer TOKEN
 
-The `TOKEN` details will be provided by an Automizer.cloud Media representative. 
+The `TOKEN` details will be provided by an Automizer.cloud representative. 
 
 ### HTTP Errors
 
