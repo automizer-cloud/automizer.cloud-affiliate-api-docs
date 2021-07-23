@@ -4,7 +4,7 @@ Poll this endpoint to obtain the available offers you can use to request a new c
 
 ### URI / Method
 
-* Endpoint: `https://arbolith.com/api/campaignrequests/available_offers` (Method: `GET`)
+* Endpoint: `https://automizer.cloud/api/campaignrequests/available_offers` (Method: `GET`)
 
 ### Response fields
 
@@ -72,8 +72,8 @@ status                          | string    | No       | The offer status. Posib
                     "Orange (FR)"
                 ]
             },
-            "preview": "https://arbolith.com/previews/20.gif",
-            "preview_thumb": "https://arbolith.com/previews/20.gif",
+            "preview": "https://automizer.cloud/previews/20.gif",
+            "preview_thumb": "https://automizer.cloud/previews/20.gif",
             "status": "Available"
         },
         // Another offer...

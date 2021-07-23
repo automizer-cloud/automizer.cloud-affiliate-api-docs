@@ -4,7 +4,7 @@ Poll this endpoint to obtain product information.
 
 ### URI / Method
 
-* Endpoint (all products): `https://arbolith.com/api/products` (Method: `GET`)
+* Endpoint (all products): `https://automizer.cloud/api/products` (Method: `GET`)
 
 ### Response fields
 

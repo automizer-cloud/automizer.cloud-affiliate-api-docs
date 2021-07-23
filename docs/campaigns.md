@@ -4,7 +4,7 @@ Poll this endpoint to obtain campaign information.
 
 ### URI / Method
 
-* Endpoint (all campaigns): `https://arbolith.com/api/campaigns` (Method: `GET`)
+* Endpoint (all campaigns): `https://automizer.cloud/api/campaigns` (Method: `GET`)
 
 ### Response fields
 
@@ -108,18 +108,18 @@ creatives                       | array     | No       | List of available creat
                 "2_157",
                 "4_157"
             ],
-            "preview": "https://arbolith.com/previews/25.jpg",
-            "preview_thumb": "https://arbolith.com/previews/25_t.jpg",
+            "preview": "https://automizer.cloud/previews/25.jpg",
+            "preview_thumb": "https://automizer.cloud/previews/25_t.jpg",
             "creatives": [
                 {
-                    "url": "https://arbolith.com/creativities/25/banner.png",
+                    "url": "https://automizer.cloud/creativities/25/banner.png",
                     "size": 142,
                     "mime_type": "image/png",
                     "width": 678,
                     "height": 565
                 },
                 {
-                    "url": "https://arbolith.com/creativities/21/Files.zip",
+                    "url": "https://automizer.cloud/creativities/21/Files.zip",
                     "size": 8,
                     "mime_type": "application/zip",
                     "width": 0,

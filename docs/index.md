@@ -1,6 +1,6 @@
-# Arbolith Affiliate API documentation
+# Automizer.cloud Affiliate API documentation
 
-For more information visit [arbolith.com](http://www.arbolith.com).
+For more information visit [automizer.cloud](http://www.automizer.cloud).
 
 ## Sections
 

@@ -4,7 +4,7 @@ Poll this endpoint to request the creation of new campaign based on an available
 
 ### URI / Method
 
-* Endpoint: `https://arbolith.com/api/campaignrequests/from_offer/ID` (Method: `POST`)
+* Endpoint: `https://automizer.cloud/api/campaignrequests/from_offer/ID` (Method: `POST`)
 
 ### Notes
 
