@@ -1,3 +1,5 @@
+**TEMPORARILY UNAVAILABLE**
+
 ### Usage
 
 Poll this endpoint to request the creation of new campaign based on an available offer.
