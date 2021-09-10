@@ -27,6 +27,8 @@ countries                | array     | No       | List of country codes (ISO 316
 devices                  | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 connection_types         | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                 | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+blacklisted_sub_ids      | array     | No       | List of blacklisted sub_ids.
+whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
 
 ####Include/exclude behavior for targeting fields
 
@@ -74,7 +76,19 @@ carriers                 | array     | No       | List of carriers for targeting
                 "exclude": [
                     "Inmarsat (GB)"
                 ]
-            }
+            },
+            "blacklisted_sub_ids": [
+                "1_kvl_0URk",
+                "18_e6K_Qqbr",
+                "24_uVV_gtds",
+                "26_Pkn_vW0E",
+                "7_CdV_Lzxu",
+                "9_VzZ_W3zV"
+            ],
+            "whitelisted_sub_ids": [
+                "12_5rD_DOBY",
+                "29_gDa_4Ngg"
+            ]
         },
         {
             // Another product
