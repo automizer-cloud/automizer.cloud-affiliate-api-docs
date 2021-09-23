@@ -22,7 +22,9 @@ tracking_link                   | string    | No       | Tracking link with requ
 impression_url                  | string    | Yes      | Impression url.
 terms_and_conditions            | boolean   | No       | If the campaign has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
-status                          | string    | No       | Campaign status. Possible values: Active, Inactive. 
+status                          | string    | No       | Campaign status. Possible values: Active, Inactive.
+start_hour                      | integer   | Yes      | The traffic start hour. 
+end_hour                        | integer   | Yes      | The traffic end hour.
 expiration_date                 | date      | Yes      | Expiration date in YYYY-MM-DD format.
 daily_conversions_cap           | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap         | integer   | Yes      | The monthly conversions cap.
@@ -65,6 +67,8 @@ creatives                       | array     | No       | List of available creat
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample additional terms and conditions.",
             "status": "Inactive",
+            "start_hour": 10,
+            "end_hour": 18,
             "expiration_date": "2018-02-16",
             "daily_conversions_cap": 556,
             "monthly_conversions_cap": 13913,
