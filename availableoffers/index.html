@@ -243,6 +243,18 @@
 <td>List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).</td>
 </tr>
 <tr>
+<td>regions</td>
+<td>array</td>
+<td>No</td>
+<td>List of regions for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>array</td>
+<td>No</td>
+<td>List of cities for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
 <td>devices</td>
 <td>array</td>
 <td>No</td>
@@ -304,7 +316,20 @@
             &quot;additional_terms_and_conditions&quot;: &quot;Sample terms and conditions text.&quot;,
             &quot;countries&quot;: {
                 &quot;include&quot;: [
-                    &quot;AS&quot;
+                    &quot;PS&quot;,
+                    &quot;RO&quot;
+                ]
+            },
+            &quot;regions&quot;: {
+                &quot;include&quot;: [
+                    &quot;Gaza&quot;,
+                    &quot;Ilfov&quot;
+                ]
+            },
+            &quot;cities&quot;: {
+                &quot;include&quot;: [
+                    &quot;Caciulati&quot;,
+                    &quot;Dragomiresti-Deal&quot;
                 ]
             },
             &quot;devices&quot;: {

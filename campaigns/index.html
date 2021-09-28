@@ -304,6 +304,18 @@
 <td>List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).</td>
 </tr>
 <tr>
+<td>regions</td>
+<td>array</td>
+<td>No</td>
+<td>List of regions for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>array</td>
+<td>No</td>
+<td>List of cities for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
 <td>devices</td>
 <td>array</td>
 <td>No</td>
@@ -392,9 +404,18 @@
             &quot;dynamic_payout&quot;: true,
             &quot;countries&quot;: {
                 &quot;include&quot;: [
-                    &quot;EE&quot;,
-                    &quot;KG&quot;
+                    &quot;MY&quot;,
+                    &quot;TK&quot;
                 ]
+            },
+            &quot;regions&quot;: {
+                &quot;include&quot;: [
+                    &quot;Malaysia&quot;,
+                    &quot;Tokelau&quot;
+                ]
+            },
+            &quot;cities&quot;: {
+                &quot;include&quot;: []
             },
             &quot;devices&quot;: {
                 &quot;include&quot;: [

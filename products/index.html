@@ -250,6 +250,18 @@
 <td>List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).</td>
 </tr>
 <tr>
+<td>regions</td>
+<td>array</td>
+<td>No</td>
+<td>List of regions for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>array</td>
+<td>No</td>
+<td>List of cities for targeting. Index indicates the operation (include/exclude).</td>
+</tr>
+<tr>
 <td>devices</td>
 <td>array</td>
 <td>No</td>
@@ -304,9 +316,18 @@
             &quot;payout_value&quot;: null,
             &quot;payout_goal&quot;: null,
             &quot;countries&quot;: {
+                &quot;include&quot;: [
+                    &quot;SO&quot;
+                ]
+            },
+            &quot;regions&quot;: {
+                &quot;include&quot;: [
+                    &quot;Jubbada Hoose&quot;
+                ]
+            },
+            &quot;cities&quot;: {
                 &quot;exclude&quot;: [
-                    &quot;BG&quot;,
-                    &quot;UM&quot;
+                    &quot;Kismayo&quot;
                 ]
             },
             &quot;devices&quot;: {
