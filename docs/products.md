@@ -24,6 +24,8 @@ payout_type              | string    | Yes      | The payout type. If null, the 
 payout_value             | float     | Yes      | The payout value. If null, value is N/A or the payout values of the offers involved are being used.
 payout_goal              | string    | Yes      | The payout goal.
 countries                | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
+regions                  | array     | No       | List of regions for targeting. Index indicates the operation (include/exclude).
+cities                   | array     | No       | List of cities for targeting. Index indicates the operation (include/exclude).
 devices                  | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 connection_types         | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                 | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
@@ -55,9 +57,18 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "payout_value": null,
             "payout_goal": null,
             "countries": {
+                "include": [
+                    "SO"
+                ]
+            },
+            "regions": {
+                "include": [
+                    "Jubbada Hoose"
+                ]
+            },
+            "cities": {
                 "exclude": [
-                    "BG",
-                    "UM"
+                    "Kismayo"
                 ]
             },
             "devices": {

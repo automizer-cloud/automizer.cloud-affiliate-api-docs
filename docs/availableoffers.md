@@ -25,6 +25,8 @@ payout_goal                     | string    | Yes      | The payout goal.
 terms_and_conditions            | boolean   | No       | If the offer has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 countries                       | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
+regions                         | array     | No       | List of regions for targeting. Index indicates the operation (include/exclude).
+cities                          | array     | No       | List of cities for targeting. Index indicates the operation (include/exclude).
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
@@ -53,7 +55,20 @@ status                          | string    | No       | The offer status. Posib
             "additional_terms_and_conditions": "Sample terms and conditions text.",
             "countries": {
                 "include": [
-                    "AS"
+                    "PS",
+                    "RO"
+                ]
+            },
+            "regions": {
+                "include": [
+                    "Gaza",
+                    "Ilfov"
+                ]
+            },
+            "cities": {
+                "include": [
+                    "Caciulati",
+                    "Dragomiresti-Deal"
                 ]
             },
             "devices": {
