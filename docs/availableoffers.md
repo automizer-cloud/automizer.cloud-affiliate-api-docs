@@ -22,6 +22,7 @@ end_hour                        | integer   | Yes      | The traffic end hour.
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | No       | The payout value. If null, value is N/A.
 payout_goal                     | string    | Yes      | The payout goal.
+mandatory_url_params            | boolean   | No       | If the offer has mandatory URL parameters.
 terms_and_conditions            | boolean   | No       | If the offer has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 countries                       | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
@@ -51,6 +52,7 @@ status                          | string    | No       | The offer status. Posib
             "payout_type": "CPC",
             "payout_value": 0.001,
             "payout_goal": null,
+            "mandatory_url_params": false,
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample terms and conditions text.",
             "countries": {
