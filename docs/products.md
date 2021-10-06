@@ -13,6 +13,7 @@ Field                    | Data Type | Nullable | Notes
 id                       | integer   | No       | Unique ID of the product.
 name                     | string    | No       | The name of the product.
 os                       | string    | No       | The operating system for targeting. Possible values: Android, iOS.
+versions                 | array     | No       | List of OS versions for targeting.
 preview_url              | string    | Yes      | Preview url (playstore, appstore).
 app_id                   | string    | Yes      | The App ID (Google Play / App Store).
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
@@ -46,6 +47,10 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "id": 49,
             "name": "Sample Product 1",
             "os": "Android",
+            "versions": [
+                "11.0.0",
+                "12.0.0"
+            ],
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "app_id": "com.example.android",
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",

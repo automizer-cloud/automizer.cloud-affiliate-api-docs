@@ -38,6 +38,7 @@ regions                         | array     | No       | List of regions for tar
 cities                          | array     | No       | List of cities for targeting. Index indicates the operation (include/exclude).
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+versions                        | array     | No       | List of OS versions for targeting.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 blacklist_subs                  | boolean   | No       | Specifies if blacklist mode should be used for sub_ids. If false, user should whitelist sub_ids. 
@@ -107,6 +108,10 @@ creatives                       | array     | No       | List of available creat
                     "Windows"
                 ]
             },
+            "versions": [
+                "15.0.0",
+                "15.1.0"
+            ],
             "connection_types": {
                 "include": [
                     "Corporate",

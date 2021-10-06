@@ -30,6 +30,7 @@ regions                         | array     | No       | List of regions for tar
 cities                          | array     | No       | List of cities for targeting. Index indicates the operation (include/exclude).
 devices                         | array     | No       | List of devices for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.  
 operating_systems               | array     | No       | List of operating systems for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
+versions                        | array     | No       | List of OS versions for targeting.
 connection_types                | array     | No       | List of connection types for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 carriers                        | array     | No       | List of carriers for targeting. Index indicates the operation (include/exclude). Check the Related Entities section for a list of possible values.
 preview                         | string    | Yes      | The fullsize preview image URL. Hotlinking not allowed.
@@ -85,6 +86,10 @@ status                          | string    | No       | The offer status. Posib
                     "Windows"
                 ]
             },
+            "versions": [
+                "10.13.5",
+                "2000.0.0"
+            ],
             "connection_types": {
                 "include": [
                     "Wi-Fi"
