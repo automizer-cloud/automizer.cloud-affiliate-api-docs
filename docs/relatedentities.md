@@ -5,6 +5,7 @@ ID  | Name  | Description
 1   | CPA   | Cost per Conversion
 2   | CPC   | Cost per Click
 3   | RVS   | Revenue Share
+4   | CPI   | Cost per Install
 
 ### Devices
 
