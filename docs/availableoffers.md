@@ -23,6 +23,8 @@ payout_type                     | string    | No       | The payout type. Check 
 payout_value                    | float     | No       | The payout value. If null, value is N/A.
 payout_goal                     | string    | Yes      | The payout goal.
 mandatory_url_params            | boolean   | No       | If the offer has mandatory URL parameters.
+mandatory_url_appname           | boolean   | No       | If the offer's appname is a mandatory URL parameter.
+mandatory_url_device_id         | boolean   | No       | If the offer's device_id is a mandatory URL parameter.
 terms_and_conditions            | boolean   | No       | If the offer has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 countries                       | array     | No       | List of country codes (ISO 3166) for targeting. Index indicates the operation (include/exclude).
@@ -54,6 +56,8 @@ status                          | string    | No       | The offer status. Posib
             "payout_value": 0.001,
             "payout_goal": null,
             "mandatory_url_params": false,
+            "mandatory_url_appname": false,
+            "mandatory_url_device_id": false,
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample terms and conditions text.",
             "countries": {

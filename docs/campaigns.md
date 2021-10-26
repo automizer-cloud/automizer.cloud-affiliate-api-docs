@@ -21,6 +21,8 @@ preview_url                     | string    | Yes      | Preview url (playstore,
 tracking_link                   | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
 impression_url                  | string    | Yes      | Impression url.
 mandatory_url_params            | boolean   | No       | If the campaign has mandatory URL parameters.
+mandatory_url_appname           | boolean   | No       | If the offer's appname is a mandatory URL parameter.
+mandatory_url_device_id         | boolean   | No       | If the offer's device_id is a mandatory URL parameter.
 terms_and_conditions            | boolean   | No       | If the campaign has terms and conditions.
 additional_terms_and_conditions | text      | Yes      | The terms and conditions text.
 status                          | string    | No       | Campaign status. Possible values: Active, Inactive.
@@ -69,6 +71,8 @@ creatives                       | array     | No       | List of available creat
             "tracking_link": "http://ads.cleverlink.xyz/click/?campaign_id=1",
             "impression_url": null,
             "mandatory_url_params": true,
+            "mandatory_url_appname": true,
+            "mandatory_url_device_id": true,
             "terms_and_conditions": true,
             "additional_terms_and_conditions": "Sample additional terms and conditions.",
             "status": "Inactive",
