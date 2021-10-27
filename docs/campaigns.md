@@ -20,7 +20,6 @@ description                     | text      | Yes      | Description text.
 preview_url                     | string    | Yes      | Preview url (playstore, appstore or image hosting).
 tracking_link                   | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
 impression_url                  | string    | Yes      | Impression url.
-mandatory_url_params            | boolean   | No       | If the campaign has mandatory URL parameters.
 mandatory_url_appname           | boolean   | No       | If the offer's appname is a mandatory URL parameter.
 mandatory_url_device_id         | boolean   | No       | If the offer's device_id is a mandatory URL parameter.
 terms_and_conditions            | boolean   | No       | If the campaign has terms and conditions.
@@ -70,7 +69,6 @@ creatives                       | array     | No       | List of available creat
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "tracking_link": "http://ads.cleverlink.xyz/click/?campaign_id=1",
             "impression_url": null,
-            "mandatory_url_params": true,
             "mandatory_url_appname": true,
             "mandatory_url_device_id": true,
             "terms_and_conditions": true,

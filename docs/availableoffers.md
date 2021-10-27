@@ -22,7 +22,6 @@ end_hour                        | integer   | Yes      | The traffic end hour.
 payout_type                     | string    | No       | The payout type. Check the Related Entities section for a list of possible values.
 payout_value                    | float     | No       | The payout value. If null, value is N/A.
 payout_goal                     | string    | Yes      | The payout goal.
-mandatory_url_params            | boolean   | No       | If the offer has mandatory URL parameters.
 mandatory_url_appname           | boolean   | No       | If the offer's appname is a mandatory URL parameter.
 mandatory_url_device_id         | boolean   | No       | If the offer's device_id is a mandatory URL parameter.
 terms_and_conditions            | boolean   | No       | If the offer has terms and conditions.
@@ -55,7 +54,6 @@ status                          | string    | No       | The offer status. Posib
             "payout_type": "CPC",
             "payout_value": 0.001,
             "payout_goal": null,
-            "mandatory_url_params": false,
             "mandatory_url_appname": false,
             "mandatory_url_device_id": false,
             "terms_and_conditions": true,
