@@ -200,6 +200,10 @@
 <td>Not found. The specified resource could not be found.</td>
 </tr>
 <tr>
+<td>429</td>
+<td>Too many requests. You have exceeded the permitted number of requests per minute.</td>
+</tr>
+<tr>
 <td>501</td>
 <td>Role not enabled for the specified action.</td>
 </tr>
@@ -215,8 +219,8 @@
 </code></pre>
 
 <h3 id="rate-limit">Rate limit</h3>
-<p>The API is limited to 15 requests per minute per user.</p>
-<p>If the limit is exceeded, you'll receive a <code>429 HTTP error</code> with the following body: <code>Too Many Attempts.</code></p>
+<p>The API is limited to 6 requests per minute per user.</p>
+<p>If the limit is exceeded, you'll receive a <code>429 HTTP error</code>.</p>
 <p>You can check the response headers to determine how many requests you have left:</p>
 <table>
 <thead>
@@ -228,19 +232,24 @@
 </thead>
 <tbody>
 <tr>
-<td>x-ratelimit-limit</td>
+<td>X-RateLimit-Limit</td>
 <td>Always</td>
 <td>The number of requests allowed per minute.</td>
 </tr>
 <tr>
-<td>x-ratelimit-remaining</td>
+<td>X-RateLimit-Remaining</td>
 <td>Always</td>
 <td>The number of requests remaining for the current minute.</td>
 </tr>
 <tr>
-<td>x-ratelimit-reset</td>
+<td>X-RateLimit-Reset</td>
 <td>Limit reached</td>
 <td>The time at which the current rate limit window resets in UTC epoch seconds.</td>
+</tr>
+<tr>
+<td>Retry-After</td>
+<td>Limit reached</td>
+<td>The number of seconds to wait before retrying the operation.</td>
 </tr>
 </tbody>
 </table>
