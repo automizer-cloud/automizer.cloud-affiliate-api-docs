@@ -24,6 +24,7 @@ Error | Description
 401   | Unauthenticated. You failed to provide the `Authorization` header or the `TOKEN` is invalid.
 403   | Forbidden. You are not authorized to access the specified resource.
 404   | Not found. The specified resource could not be found.
+429   | Too many requests. You have exceeded the permitted number of requests per minute.
 501   | Role not enabled for the specified action.
 
 The response body will also include the following JSON with the error description:
@@ -39,14 +40,15 @@ The response body will also include the following JSON with the error descriptio
 
 ### Rate limit
 
-The API is limited to 15 requests per minute per user.
+The API is limited to 6 requests per minute per user.
 
-If the limit is exceeded, you'll receive a `429 HTTP error` with the following body: `Too Many Attempts.`
+If the limit is exceeded, you'll receive a `429 HTTP error`.
 
 You can check the response headers to determine how many requests you have left:
 
 Header                | Present       | Description
 --------------------- | ------------- | ----------------------------------------------------------------------------
-x-ratelimit-limit     | Always        | The number of requests allowed per minute.
-x-ratelimit-remaining | Always        | The number of requests remaining for the current minute.
-x-ratelimit-reset     | Limit reached | The time at which the current rate limit window resets in UTC epoch seconds.
+X-RateLimit-Limit     | Always        | The number of requests allowed per minute.
+X-RateLimit-Remaining | Always        | The number of requests remaining for the current minute.
+X-RateLimit-Reset     | Limit reached | The time at which the current rate limit window resets in UTC epoch seconds.
+Retry-After           | Limit reached | The number of seconds to wait before retrying the operation.
