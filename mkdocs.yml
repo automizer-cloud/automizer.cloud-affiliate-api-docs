@@ -4,6 +4,5 @@ theme: readthedocs
 pages:
     - Home: index.md
     - General Request Information: requests.md
-    - Campaigns: campaigns.md
     - Products: products.md
     - Related Entities: relatedentities.md
