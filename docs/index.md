@@ -7,6 +7,4 @@ For more information visit [automizer.cloud](http://www.automizer.cloud).
 * [General Request information](requests.md)
 * [Campaigns](campaigns.md)
 * [Products](products.md)
-* [Available Offers (Marketplace) - Temporarily unavailable](availableoffers.md)
-* [Campaign Request - Temporarily unavailable](campaignrequest.md)
 * [Related Entities](relatedentities.md)
