@@ -17,7 +17,6 @@ versions                 | array     | No       | List of OS versions for target
 preview_url              | string    | Yes      | Preview url (playstore, appstore).
 app_id                   | string    | Yes      | The App ID (Google Play / App Store).
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
-expiration_date          | date      | Yes      | Expiration date in YYYY-MM-DD format.
 daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap  | integer   | Yes      | The monthly conversions cap.
 payout_type              | string    | Yes      | The payout type. If null, the payout types of the offers involved are being used.
@@ -53,7 +52,6 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "app_id": "com.example.android",
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",
-            "expiration_date": "2021-03-19",
             "daily_conversions_cap": 652,
             "monthly_conversions_cap": 15752,
             "payout_type": "RVS",
