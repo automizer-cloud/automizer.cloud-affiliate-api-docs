@@ -19,6 +19,10 @@ app_id                   | string    | Yes      | The App ID (Google Play / App 
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
 daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
 monthly_conversions_cap  | integer   | Yes      | The monthly conversions cap.
+daily_impressions_cap    | integer   | Yes      | The daily impressions cap.
+daily_clicks_cap         | integer   | Yes      | The daily clicks cap.
+daily_budget_cap         | float     | Yes      | The daily budget cap.
+total_budget_cap         | float     | Yes      | The total budget cap.
 payout_type              | string    | Yes      | The payout type. If null, the payout types of the offers involved are being used.
 payout_value             | float     | Yes      | The payout value. If null, value is N/A or the payout values of the offers involved are being used.
 payout_goal              | string    | Yes      | The payout goal.
@@ -54,6 +58,10 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",
             "daily_conversions_cap": 652,
             "monthly_conversions_cap": 15752,
+            "daily_impressions_cap": 666926,
+            "daily_clicks_cap": 133955,
+            "daily_budget_cap": 600.87,
+            "total_budget_cap": 6000.90,
             "payout_type": "RVS",
             "payout_value": null,
             "payout_goal": null,
