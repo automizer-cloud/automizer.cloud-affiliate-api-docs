@@ -22,6 +22,7 @@ daily_clicks_cap         | integer   | Yes      | The daily clicks cap.
 daily_conversions_cap    | integer   | Yes      | The daily conversions cap.
 daily_budget_cap         | float     | Yes      | The daily budget cap.
 monthly_conversions_cap  | integer   | Yes      | The monthly conversions cap.
+monthly_budget_cap       | float     | Yes      | The monthly budget cap.
 total_budget_cap         | float     | Yes      | The total budget cap.
 payout_type              | string    | Yes      | The payout type. If null, the payout types of the offers involved are being used.
 payout_value             | float     | Yes      | The payout value. If null, value is N/A or the payout values of the offers involved are being used.
@@ -61,6 +62,7 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "daily_conversions_cap": 652,
             "daily_budget_cap": 600.87,
             "monthly_conversions_cap": 15752,
+            "monthly_budget_cap": 3000.50,
             "total_budget_cap": 6000.90,
             "payout_type": "RVS",
             "payout_value": null,
