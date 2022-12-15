@@ -9,7 +9,7 @@ Poll this endpoint to obtain active product information.
 ### Response fields
 
 Field                    | Data Type | Nullable | Notes
------------------------- | --------- | -------- | ---------------------------------------------------------------------
+------------------------ |-----------|----------| ---------------------------------------------------------------------
 id                       | integer   | No       | Unique ID of the product.
 name                     | string    | No       | The name of the product.
 os                       | string    | No       | The operating system for targeting. Possible values: Android, iOS.
@@ -17,6 +17,9 @@ versions                 | array     | No       | List of OS versions for target
 preview_url              | string    | Yes      | Preview url (playstore, appstore).
 app_id                   | string    | Yes      | The App ID (Google Play / App Store).
 tracking_link            | string    | No       | Tracking link with required parameters. Check panel for optional parameters.
+start_hour               | int       | Yes      | Day parting start hour. Only present if end hour is set.
+end_hour                 | int       | Yes      | Day parting end hour. Only present if start hour is set.
+offset                   | string    | No       | Day parting offset (timezone).
 hourly_impressions_cap   | integer   | Yes      | The hourly impressions cap.
 hourly_clicks_cap        | integer   | Yes      | The hourly clicks cap.
 daily_impressions_cap    | integer   | Yes      | The daily impressions cap.
@@ -59,6 +62,9 @@ whitelisted_sub_ids      | array     | No       | List of whitelisted sub_ids.
             "preview_url": "https://play.google.com/store/apps/details?id=com.makemytrip",
             "app_id": "com.example.android",
             "tracking_link": "http://adult.cleverlink.xyz/click/p/?id=49&affiliate_id=21",
+            "start_hour": 7,
+            "end_hour": 21,
+            "offset": "-03:00",
             "hourly_impressions_cap": 66692,
             "hourly_clicks_cap": 13395,
             "daily_impressions_cap": 666926,
