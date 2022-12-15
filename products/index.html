@@ -141,6 +141,24 @@
 <td>Tracking link with required parameters. Check panel for optional parameters.</td>
 </tr>
 <tr>
+<td>start_hour</td>
+<td>int</td>
+<td>Yes</td>
+<td>Day parting start hour. Only present if end hour is set.</td>
+</tr>
+<tr>
+<td>end_hour</td>
+<td>int</td>
+<td>Yes</td>
+<td>Day parting end hour. Only present if start hour is set.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>string</td>
+<td>No</td>
+<td>Day parting offset (timezone).</td>
+</tr>
+<tr>
 <td>hourly_impressions_cap</td>
 <td>integer</td>
 <td>Yes</td>
@@ -281,6 +299,9 @@
             &quot;preview_url&quot;: &quot;https://play.google.com/store/apps/details?id=com.makemytrip&quot;,
             &quot;app_id&quot;: &quot;com.example.android&quot;,
             &quot;tracking_link&quot;: &quot;http://adult.cleverlink.xyz/click/p/?id=49&amp;affiliate_id=21&quot;,
+            &quot;start_hour&quot;: 7,
+            &quot;end_hour&quot;: 21,
+            &quot;offset&quot;: &quot;-03:00&quot;,
             &quot;hourly_impressions_cap&quot;: 66692,
             &quot;hourly_clicks_cap&quot;: 13395,
             &quot;daily_impressions_cap&quot;: 666926,
